@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jumpman (Projet 1 3D) par Benacef Nacef et Corentin Brunel</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- Code JavaScript pas local -->
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="jumpman/initObjets.js"></script>
+	<script type="text/javascript" src="jumpman/dessiner.js"></script>
+	<script type="text/javascript" src="jumpman/dessinerJumpman.js"></script>
+</head>
+
+<body onload="initAnimation()">
+
+	<center>
+			<canvas id="monCanvas" width=320 height=200 tabIndex="1" onkeyup="gererClavierUp(event)">
+		    Votre navigateur ne supporte pas la balise canvas
+	    </canvas>
+	</center>	
+
+	
+</body>
+<script>
+	document.body.addEventListener("keydown", function(e) {
+    	keys[e.keyCode] = true;
+	});
+	
+	
+	document.body.addEventListener("keyup", function(e) {
+    keys[e.keyCode] = false;
+	});</script>
+</html>
